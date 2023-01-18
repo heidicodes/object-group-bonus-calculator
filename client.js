@@ -44,14 +44,75 @@ console.log('array of employee data: ',  employees );
 // Ask questions when you don't.
 
 
-
+function loopOverAll(array){
+  for (let i=0; i < array.length; i++){
+    calculateIndividualEmployeeBonus[i];
+  }
+  return calculateIndividualEmployeeBonus();
+}
+console.log(loopOverAll(employees));
 
 // This function will calculate 1 employee's bonus!
-//
-function calculateIndividualEmployeeBonus( employee ) {  
-  // your logic here
-  
+// //
+function calculateIndividualEmployeeBonus(employeeObject) {
+// return newObject{
+            name: employeeObject.name,
+            bonusPercentage: ratingBonus + retentionBonus + salaryAdjustment
+            totalCompensation: employeeObject.annualSalary + bonusPercentage
+            totalBonus: 
+          }  
+//   // your logic here
+//  // write loop that takes employee object and console logs for each employee
+//   // log should be in the loop
+//   // for (let employeeObject of employees) {
+//     console.log(employeeObject.name);
+//     return ratingBonus + retentionBonus + salaryAdjustment
+//   }
+ 
+function ratingBonus(employeeObject){
+  if (employeeObject.reviewRating == 3) {
+    return employeeObject.annualSalary * .04 
+  }
+  else if  (employeeObject.reviewRating == 4) {
+   return employeeObject.annualSalary * .06
+    }
+  else if (employeeObject.reviewRating == 5) {
+   return employeeObject.annualSalary * .1
+    }
+  else if (employeeObject.reviewRating <= 2) {
+    return 0
+    }
+
+}  
+ratingBonus(employees[0]);
+
+// function retentionBonus(employeeObject){
+//     if (employeeNumber.length == 4) {
+//       return employeeObject.annualSalary + (employeeObject.annualSalary * 0.05)
+//     }
+//       else {
+//         return 0
+//       }
+// }
+
+// function salaryAdjustment(employeeObject){
+//   if(employeeObject.annualSalary > 65,000){
+//     return employeeObject.annualSalary - (employeeObject.annualSalary * 0.01)
+//   }
+//   else{
+//     return 0
+//   }
+// }
+
+// console.log(calculateIndividualEmployeeBonus(employees[0]));
+ // return outputObject.name
+//  outputObject.bonusPercentage
+//  outputObject.totalCompensation
+//  outputObject.totalBonus
   
   // return new object with bonus results
 
-}
+
+// employeeObject.name
+// employeeObject.annualSalary // + bonusPercentage
+// employeeObject.reviewRating
